@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load i18n widget_tweaks %}
+	  <!-- Page CSS -->
+	  <link rel="stylesheet" href="/static/css/login-style.css" />
+</head>
+
+<body>
+	  <div class="animsition"> <!-- Animsition -->
+    
+	  <div id="fullpage" class="hidden"> <!-- Full Page -->
+    
+	  <!-- Message from Server -->
+	  {% if messages %}
+			{% for message in messages %}
+				  <div class="message hidden">{{ message }}</div>
+			{% endfor %}
+	  {% endif %}		
+    
+			<!-- === Section 1 - Log In Form === -->
+			<div class="section" id="section1"> 
+				  <div class="container">
+						<div class="row title-row">
+							  <h2 class="font-bold">Log In</h2>
+						</div>
+						<div class="col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2"> <!-- Wrapper -->
+							  <form class="form-horizontal" role="form" action="/accounts/auth/" method="post" id="login"> <!-- Form -->
+									{% csrf_token %}    
+									<div class="form-group">
+										  <div class="col-md-6 col-md-offset-1 col-sm-8 col-xs-12">
+												<input type="email" id="inputEmail" class="form-control input-lg" placeholder="Email" name = "email" required autofocus> 
+												<input type="password" id="inputPassword" class="form-control input-lg" placeholder="Password" name = "password" required>
+												<!-- Register and Forgot Password -->
+												<p class="font-light">Forgot your <a href="/accounts/forgot_password/" class="animsition-link">password</a>?
+												Register for new <a href="/accounts/register/" class="animsition-link">account</a>!</p>  <!-- /registerforgot -->
+										  </di>
+									</div>
+									<div class="form-group">
+										  <div class="col-sm-offset-2 col-sm-4">
+												<!-- Submit button -->
+												<button type="submit" class="btn btn-primary btn-lg" id="submit">
+													  <h4 class="font-semibold">{% trans "Submit" %}</h4></button>
+										  </div> <!-- /submitbutton -->
+									</div>
+							  </form> <!-- /form -->
+						</div> <!-- /wrapper -->
+				  </div> <!-- /container -->
+			</div>  <!-- /section1 -->
+	  </div> <!-- /fullpage -->
+	
+	  <!-- === Navigation and Footer === -->
+	  <div class="wrapper"></div>
+	  <nav id="bt-menu" class="bt-menu bt-menu-close hidden">
+			<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+			<!-- Navigation Bar -->
+			<ul> 
+				<li><a href="/" class="animsition-link">Home</a></li>
+				<li><a href="/contact/" class="animsition-link">Contact</a></li>
+				<li><a href="#">Log In</a></li>
+			</ul> <!-- /nav -->
+			<!-- Footer -->
+			<ul>
+				<li><a href="#" class="bt-icon icon-phone" title="561-713-9103"></a></li>
+				<li><a href="#" class="bt-icon icon-home" title="339 Lehigh Avenue, Pittsburgh PA, USA, 15213"></a></li>
+				<li><a target="_blank" href="http://www.facebook.com/skycision" class="bt-icon icon-facebook"></a></li>
+				<li><a target="_blank" href="https://twitter.com/Skycision" class="bt-icon icon-twitter"></a></li>
+			</ul> <!-- /footer -->
+	  </nav> <!-- /bt-menu -->
+	  
+	  </div> <!-- /animsition -->
+</body>
+
+	  <!-- Script -->
+	  <!-- Please-wait -->
+	  <script src="/static/js/please-wait.min.js"></script>
+	  <!-- jQuery -->
+	  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	  <!-- SlimScroll -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/vendors/jquery.slimscroll.min.js"></script>
+	  <!-- FullPage -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	  <!-- Menu Bubble -->
+	  <script src="/static/js/classie.js"></script>
+	  <script src="/static/js/border-menu.js"></script>
+	  <!-- Bootstrap -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <!-- Waves -->
+	  <script src="/static/js/waves.min.js"></script>
+	  <!-- Tooltipster -->
+	  <script src="/static/js/tooltipster.min.js"></script>
+	  <!-- Animsition -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.min.js"></script>
+	  <!-- Google Captcha -->
+	  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	  <!-- Sweet Alert -->
+	  <script src="/static/js/sweetalert.min.js"></script>
+	  <!-- Max Length -->
+	  <script src="/static/js/bootstrap-maxlength.min.js"></script>
+	  <!-- Notify -->
+	  <script src="/static/js/notify.js"></script>
+	  <!-- Page Js -->
+	  <script src="/static/js/login-script.js"></script>
+{% endblock %}

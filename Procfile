@@ -1,0 +1,1 @@
+web: gunicorn Skycision.wsgi --log-file -

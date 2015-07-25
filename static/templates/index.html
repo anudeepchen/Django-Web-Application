@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<!-- Page CSS -->
+	<link rel="stylesheet" href="/static/css/index-style.css" />
+</head>
+
+<body>
+	<div class="animsition"> <!-- Animsition -->
+	
+	<div id="fullpage" class="hidden"> <!-- Full Page -->
+			
+		<!-- === Section 1 - Home === -->
+		<div class="section" id="section1">
+			<div class="slide" id="slide1">
+				<div class="container">
+					<div class="row title-row">
+						<div class="font-bold hidden">Making Drones Accesible</div>
+					</div> <!-- /row -->
+					<div class="row subtitle-row">
+						<div class="font-thin hidden">Skycision provides a data-driven platform which processes drone-collected aerial imagery.</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide1 -->
+			<div class="slide" id="slide2">
+				<div class="container">
+					<div class="row title-row">
+						<div class="font-bold hidden">Next Generation Agriculture</div>
+					</div> <!-- /row -->
+					<div class="row subtitle-row">
+						<div class="font-thin hidden">Our services are specifically designed for the modern grower enhancing their ability to manage a large-scale operation.</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide2 -->
+			<div class="slide" id="slide3"> 
+				<div class="container">
+					<div class="row title-row">
+						<div class="font-bold hidden">Precision At Your Finger Tips</div>
+					</div> <!-- /row -->
+					<div class="row subtitle-row">
+						<div class="font-thin hidden">Identification of pests, weeds, or blights before they make a significant impact on a crops yield can save thousands of hard-earned dollars for growers.</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide3 -->
+			
+			<!-- Next Section Arrow -->
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 next-section">
+				<h4 class="font-bold">What we offer!</h4>
+				<i class="fa fa-angle-down fa-5x animated infinite bounce" section-target="2"></i>
+			</div>
+		</div> <!-- /section1 -->
+		
+		<!-- === Section 2 - Solution === -->
+		<div class="section" id="section2">
+			<div class="slide" id="slide1">
+				<div class="container">
+					<div class="row content-row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<i class="hovicon effect-3 sub-a hidden" slide-target="1"><b class="fa fa-paper-plane"></b></i>
+							<div class="font-bold img-subtitle hidden">Flight Planner</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<i class="hovicon effect-3 sub-a hidden" slide-target="2"><b class="fa fa-image"></b></i>
+							<div class="font-bold img-subtitle hidden">Aerial Mapping</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<i class="hovicon effect-3 sub-a hidden" slide-target="3"><b class="fa fa-eye"></b></i>
+							<div class="font-bold img-subtitle hidden">Rapid Insights</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<i class="hovicon effect-3 sub-a hidden" slide-target="4"><b class="fa fa-gears"></b></i>
+							<div class="font-bold img-subtitle hidden">Technologies</div>
+						</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide1 -->
+			<div class="slide" id="slide2">
+				<div class="container">
+					<div class="fa fa-remove go-back hidden"></div>
+					</br>
+					<div class="row title-row">
+						<div class="font-light hidden">Autonomous flight mapping capabilities enable your drone to fly an optimal route to map a given area of your operation. Plan your daily/weekly flights over a morning cup of coffee on your computer or out in the field on your smartphone, whatever your choice, we’re dedicated to make the planning to deployment process easier!</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide2 -->
+			<div class="slide" id="slide3">
+				<div class="container">
+					<div class="fa fa-remove go-back hidden"></div>
+					</br>
+					<div class="row title-row">
+						<div class="font-light hidden">While your drone is flying, our app is mapping! Our aerial mapping capabilities can map elevation, provide NDVI as an indicator of field health, and make critical field measurements. Aerial mapping saves time in crop scouting and is critical in precisely identifying areas of your field that are in need. Streamline your resources and maximize yield all at the press of a button!</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide3 -->
+			<div class="slide" id="slide4">
+				<div class="container">
+					<div class="fa fa-remove go-back hidden"></div>
+					</br>
+					<div class="row title-row">
+						<div class="font-light hidden">By aggregating data from various operations regionally and nationally, we can better understand what the contributing factors are to crop health in various climates and regions. The results of the large scale analysis allow us to understand and benchmark crop performance at a local level to deliver rapid insights to our farmers. Let us help you in maximizing the value of our mapping capabilities.</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide4 -->
+			<div class="slide" id="slide5">
+				<div class="container">
+					<div class="fa fa-remove go-back hidden"></div>
+					</br>
+					<div class="row title-row">
+						<div class="font-light hidden">The Skycision app currently will be compatible with 3D Robotics Iris+ and Solo drones. Specialized imaging sensors can measure the current health of the crops and map elevation levels to identify regions of runoff.</div>
+					</div> <!-- /row -->
+					<div class="row title-row">
+						<div class="font-light hidden">Low cost drones in combination with our mapping application make aerial data easier and more accessible than ever before. Aerial precision allows our growers to identify and react to threatened areas in their field in near real-time. By doing so, growers maximize their yield potential by prevailing against the various threats their fields may face.</div>
+					</div> <!-- /row -->
+				</div> <!-- /container -->
+			</div> <!-- /slide5 -->
+		</div> <!-- /section2 -->
+	</div> <!-- /fullpage -->
+	
+	<!-- === Navigation and Footer === -->
+	<div class="wrapper"></div>
+	<nav id="bt-menu" class="bt-menu bt-menu-close hidden">
+		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+		<!-- Navigation Bar -->
+		<ul> 
+			<li><a href="#">Home</a></li>
+			<li><a href="/contact/" class="animsition-link">Contact</a></li>
+			<li><a href="/accounts/login/" class="animsition-link">Log In</a></li>
+		</ul> <!-- /nav -->
+		<!-- Footer -->
+		<ul>
+			<li><a href="#" class="bt-icon icon-phone" title="561-713-9103"></a></li>
+			<li><a href="#" class="bt-icon icon-home" title="339 Lehigh Avenue, Pittsburgh PA, USA, 15213"></a></li>
+			<li><a target="_blank" href="http://www.facebook.com/skycision" class="bt-icon icon-facebook"></a></li>
+			<li><a target="_blank" href="https://twitter.com/Skycision" class="bt-icon icon-twitter"></a></li>
+		</ul> <!-- /footer -->
+	</nav> <!-- /bt-menu -->
+	
+	</div> <!-- /animsition -->
+</body>
+
+	<!-- Script -->
+	<!-- Please-wait -->
+	<script src="/static/js/please-wait.min.js"></script>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<!-- SlimScroll -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/vendors/jquery.slimscroll.min.js"></script>
+	<!-- FullPage -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	<!-- Menu Bubble -->
+	<script src="/static/js/classie.js"></script>
+	<script src="/static/js/border-menu.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Waves -->
+	<script src="/static/js/waves.min.js"></script>
+	<!-- Tooltipster -->
+	<script src="/static/js/tooltipster.min.js"></script>
+	<!-- Animsition -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.min.js"></script>
+	<!-- Page Js -->
+	<script src="/static/js/index-script.js"></script>
+{% endblock %}

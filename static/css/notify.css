@@ -1,0 +1,52 @@
+.notifications {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* Positioning */ 
+.notifications.top-right {
+  right: 10px;
+  top: 65px;
+}
+
+.notifications.top-left {
+  left: 10px;
+  top: 25px;
+}
+
+.notifications.bottom-left {
+  left: 10px;
+  bottom: 25px;
+}
+
+.notifications.bottom-right {
+  right: 10px;
+  bottom: 25px;
+}
+
+/* Notification Element */
+.notifications > div {
+  position: relative;
+  margin: 5px 0px;
+}
+
+.alert-danger {
+  color: white;
+  background-color: #DA4453;
+  border: none;
+}
+.alert-info {
+  color: white;
+  background-color: #37BC9B;
+  border: none;
+}
+.alert-success {
+  color: white;
+  background-color: #4A89DC;
+  border: none;
+}
+.alert-warning {
+  color:white;
+  background-color: #E9573F;
+  border: none;
+}

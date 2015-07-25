@@ -1,0 +1,22 @@
+
+{%extends "base.html"%}
+ {% block content %}   
+     {% if form.errors %}
+
+    <p class = "error"> Error in your form </p>
+
+    {% endif %}
+    
+    {% if messages %}
+            <script type="text/javascript">
+        $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+      		{% endif%}    
+     <form action="/accounts/upload_file/" method="post" enctype="multipart/form-data" data-ajax = "false">
+          {% csrf_token %}
+          <input type="file" name="docfile" accept="text/*">
+            <p><input type="submit" value="Upload" /></p>
+     </form>
+{% endblock %}

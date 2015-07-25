@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{% block content %}
+    <h2> You have successfully loggedout </h2>
+     <form class="form-signin" action="." method="post" >
+    {% if messages %}
+            <script type="text/javascript">
+$(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>  
+ {% endif %}
+    <p>Click <a href ="/accounts/login/">here</a> to login again.</p>
+    </form>
+{% endblock %}

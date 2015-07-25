@@ -1,0 +1,126 @@
+/* Loading Scren */
+.pg-loading-screen .pg-loading-html {
+	margin-top: 30px;
+}
+
+.pg-loading-screen .pg-loading-html p {
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.pg-loading-screen .pg-loading-html form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.pg-loading-screen .pg-loading-html p.loading-message {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+/* Loading Screen End */
+
+/* Font */
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+.font-bold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+/* Font End*/
+
+/* Body */
+body {
+	background-color: #097054;
+	color: #ffffff;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased !important;
+}
+/* Body End */
+
+/* General Section */
+.section {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.title-row {
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+	
+.line-row .hr {
+	background-color: #e4e6e5;
+	height: 5px;
+	margin: 0 auto;
+	width: 33%;
+}
+	
+.subtitle-row {
+	font-size: 30px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+	
+.content-row {
+	padding-top: 45px;
+}
+    
+.content-row h2 {
+	font-size: 28px;
+	padding-bottom: 40px;
+}
+	
+.content-row h4 {
+	font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.next-section {
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.next-section .fa-angle-down {
+	cursor: pointer;
+}
+/* General Section End */
+
+/* Nav Bar */
+.wrapper {
+  	top: 0;
+	left: 0;
+	background-color: rgba( 0, 0, 0, .5 );
+	border-bottom: 1px solid #bfbfbf;
+	position: fixed;
+	height: 65px;
+	width: 100%;
+	opacity: 1;
+}
+/* Nav Bar End */
+
+/* Section 1*/
+#section1 {
+    text-align: center;
+	padding-top: 50px;
+}
+
+#id_message {
+	height: 180px;
+}
+/* Section 1 End */

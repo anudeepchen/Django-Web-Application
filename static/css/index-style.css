@@ -1,0 +1,258 @@
+/* Loading Scren */
+.pg-loading-screen .pg-loading-html {
+	margin-top: 30px;
+}
+
+.pg-loading-screen .pg-loading-html p {
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.pg-loading-screen .pg-loading-html form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.pg-loading-screen .pg-loading-html p.loading-message {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+/* Loading Screen End */
+
+/* Font */
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+.font-bold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+/* Font End*/
+
+/* Body */
+body {
+	background-color: #097054;
+	color: #ffffff;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased !important;
+}
+/* Body End */
+
+/* General Section */
+.section {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.title-row {
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+	
+.line-row .hr {
+	background-color: #e4e6e5;
+	height: 5px;
+	margin: 0 auto;
+	width: 33%;
+}
+	
+.subtitle-row {
+	font-size: 30px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+	
+.content-row {
+	padding-top: 45px;
+}
+    
+.content-row h2 {
+	font-size: 28px;
+	padding-bottom: 40px;
+}
+	
+.content-row h4 {
+	font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.next-section {
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.next-section .fa-angle-down {
+	cursor: pointer;
+}
+
+div.fp-controlArrow { 
+    display: none; 
+}
+/* General Section End */
+
+/* Nav Bar */
+.wrapper {
+  	top: 0;
+	left: 0;
+	background-color: rgba( 0, 0, 0, .5 );
+	border-bottom: 1px solid #bfbfbf;
+	position: fixed;
+	height: 65px;
+	width: 100%;
+	opacity: 1;
+}
+/* Nav Bar End */
+
+/* Section 1*/
+#section1 {
+    text-align: center;
+}
+
+#section1 div.fp-controlArrow { 
+    display: block; 
+}
+
+.slide {
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+/* Section 1 End */
+
+/* Section 1 - Slide 1 */
+#section1 #slide1 {
+	background-image: url("../images/slider/slider1.jpg")
+}
+/* Section 1 - Slide 1 End */
+
+/* Section 1 - Slide 2 */
+#section1 #slide2 {
+	background-image: url("../images/slider/slider2.jpg") 
+}
+/* Section 1 - Slide 2 End */
+
+/* Section 1 - Slide 3 */
+#section1 #slide3 {
+    background-image: url("../images/slider/slider3.jpg") 
+}
+/* Section 1 - Slide 3 End */
+
+/* Section 2*/
+#section2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#section2 .title-row {
+  font-size: 32px;
+}
+
+#section2 .hovicon.effect-3.sub-a, .hovicon.effect-3.sub-a i {
+	color: #097054;
+}
+
+#section2 .hovicon.effect-3.sub-a:hover, .hovicon.effect-3.sub-a:hover i {
+    color: #ffffff;
+}
+
+.go-back {
+  float: right;
+  cursor: pointer;
+}
+/* Section 2 End */
+
+/* Section 2 - Slide 1 */
+#section2 #slide1 {
+	top: 50%; 
+}
+/* Section 2 - Slide 2 End */
+
+/* Section 2 - Slide 2 */
+#section2 #slide2 {
+	text-align: left;
+	font-weight: 200;
+	padding-top: 65px;
+}
+/* Section 2 - Slide 2 End */
+
+/* Section 2 - Slide 3 */
+#section2 #slide3 {
+	text-align: left;
+	font-weight: 200;
+	padding-top: 65px;
+}
+/* Section 2 - Slide 3 End */
+
+/* Section 2 - Slide 4 */
+#section2 #slide4 {
+	text-align: left;
+	font-weight: 200;
+	padding-top: 65px;
+}
+/* Section 2 - Slide 4 End */
+
+/* Section 2 - Slide 5 */
+#section2 #slide5 {
+	text-align: left;
+	font-weight: 200;
+	padding-top: 65px;
+}
+/* Section 2 - Slide 5 End */
+
+/* Handle Phone Screen Size */
+@media (max-width: 767px) {
+	  
+	#section2 #slide2, #section2 #slide3, #section2 #slide4, #section2 #slide5 {
+		padding-left: 15px;
+	}
+	
+	.img-subtitle {
+		font-size: 20px;
+	}
+	
+	div.fp-controlArrow {
+		-ms-transform: scale(0.5,0.5); /* IE 9 */
+		-webkit-transform: scale(0.5,0.5); /* Safari */
+	    transform: scale(0.5,0.5);
+	}
+	
+	.title-row {
+		font-size: 30px;
+		padding-bottom: 33px;
+	}
+	
+	#section2 .title-row {
+		font-size: 25px;
+	}
+	
+	.subtitle-row {
+		font-size: 23px;
+		padding-bottom: 26px;
+		padding-top: 26px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+/* Handle Phone Screen Size End */
